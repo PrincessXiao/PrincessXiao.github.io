@@ -10,7 +10,7 @@
       Princess Xiao
     </title>
     
-    <meta name="author" content="Name Lastname">
+    <meta name="author" content="西雅图叔叔">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -28,14 +28,24 @@
     <script>
         $(document).ready(function() {
             var cpart1 = $("#part1");
+            var cpart2 = $("#part2");
             var pad = "0000";
-            var number = pad;
-            var element_part1;
+            var number;
+            var element_part;
+            
             for(var i = 1; i <= 66; i++) {
                 number = pad.substring(0, pad.length - i.toString().length) + i.toString();
-                element_part1 = "<a href='assets/img/phase1/wp_ss_20140807_" + number + ".png' data-lightbox='princessxiao' data-title=''></a>";
-                console.log("element_part1: " + element_part1);
-                cpart1.append(element_part1);
+                element_part = "<a href='assets/img/phase1/wp_ss_20140807_" + number + ".png' data-lightbox='princessxiao_part1' data-title=''></a>";
+                console.log("element_part: " + element_part);
+                cpart1.append(element_part);
+                
+            }
+
+            for(var i = 141; i <= 205; i++) {
+                number = pad.substring(0, pad.length - i.toString().length) + i.toString();
+                element_part = "<a href='assets/img/phase2/wp_ss_20140807_" + number + ".png' data-lightbox='princessxiao_part2' data-title=''></a>";
+                console.log("element_part1: " + element_part);
+                cpart2.append(element_part);
                 
             }
         });
@@ -62,7 +72,7 @@
               <span class="icon-bar"></span>
             </a>
 
-            <a class="brand" href="/">Jekyll Bootstrap</a>
+            <a class="brand" href="/">For Princess Xiao :)</a>
 
             <div class="nav-collapse">
               <ul class="nav">
@@ -178,47 +188,32 @@
 
 <div class="image-row">
 	<div class="image-set" id="part1">
-	    <a href="assets/img/princessxiao_cover.png" data-lightbox="princessxiao" data-title="">
+	    <a href="assets/img/princessxiao_cover.png" data-lightbox="princessxiao_part1" data-title="">
 	         <img class="example-image" alt="" src="assets/img/princessxiao_cover.png">
 	    </a>
 	</div>
 </div>
+<br>
+<p>我还是觉得有不少包袱你接不住，节奏有点跟不上，还得更多磨合才行。</p>
+<pre><code>
 
-<p>In <code>_config.yml</code> remember to specify your own data:</p>
-
-<pre><code>title : My Blog =)
-
-author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
 </code></pre>
 
-<p>The theme should reference these variables whenever needed.</p>
+<h2 id="sample-posts">Don't worry, by happy!(下)</h2>
+<div class="image-row">
+	<div class="image-set" id="part2">
+	    <a href="assets/img/princessxiao_cover.png" data-lightbox="princessxiao_part2" data-title="">
+	         <img class="example-image" alt="" src="assets/img/princessxiao_cover.png">
+	    </a>
+	</div>
+</div>
+<br>
+<p>第二部分感觉还不错，你生气那段比较煞风景。。。唉没办法，公主脾气上来真是惊天地，
+  泣鬼神啊，好了就到这里了，和一休哥说再见吧。BE HAPPY!
+</p>
 
-<h2 id="sample-posts">Sample Posts</h2>
-
-<p>This blog contains sample posts which help stage pages and blog data.
-When you don’t need the samples anymore just delete the <code>_posts/core-samples</code> folder.</p>
-
-<pre><code>$ rm -rf _posts/core-samples
+<pre><code>
 </code></pre>
-
-<p>Here’s a sample “posts list”.</p>
-
-<ul class="posts">
-  
-    <li><span>29 Dec 2011</span> &raquo; <a href="/core-samples/lessons/2011/12/29/jekyll-introduction">Jekyll Introduction</a></li>
-  
-</ul>
-
-<h2 id="to-do">To-Do</h2>
-
-<p>This theme is still unfinished. If you’d like to be added as a contributor, <a href="http://github.com/plusjade/jekyll-bootstrap">please fork</a>!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.</p>
-
-
   </div>
 </div>
 
@@ -231,9 +226,7 @@ We need to clean up the themes, make theme usage guides with theme-specific mark
 
     <footer>
       <div class="container">
-        <p>&copy; 2014 Name Lastname
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://github.com/dhulihan/hooligan" target="_blank">The Hooligan Theme</a>
+        <p>&copy;  西雅图叔叔 2014-Forever
         </p>
       </div>
     </footer>
