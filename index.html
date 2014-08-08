@@ -25,7 +25,22 @@
     <link href="/assets/themes/hooligan/css/pygments.css" rel="stylesheet" type="text/css" media="all">
     <link href="/assets/themes/hooligan/css/darkstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="/assets/themes/hooligan/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-
+    <script>
+        $(document).ready(function() {
+            var cpart1 = $("#part1");
+            var pad = "0000";
+            var number = pad;
+            var element_part1;
+            for(var i = 1; i <= 66; i++) {
+                number = pad.substring(0, pad.length - i.toString().length) + i.toString();
+                element_part1 = "<a href='assets/img/phase1/wp_ss_20140807_" + number + ".png' data-lightbox='princessxiao' data-title=''></a>";
+                console.log("element_part1: " + element_part1);
+                cpart1.append(element_part1);
+                
+            }
+        });
+        
+    </script>
     <!-- fav and touch icons -->
     <!-- Update these with your own images
       <link rel="shortcut icon" href="images/favicon.ico">
@@ -166,17 +181,6 @@
 	    <a href="assets/img/princessxiao_cover.png" data-lightbox="princessxiao" data-title="">
 	         <img class="example-image" alt="" src="assets/img/princessxiao_cover.png">
 	    </a>
-	    <a href="assets/img/phase1/wp_ss_20140807_0001.png" data-lightbox="princessxiao" data-title=""></a>
-        <a href="assets/img/phase1/wp_ss_20140807_0002.png" data-lightbox="princessxiao" data-title=""></a>
-        <a href="assets/img/phase1/wp_ss_20140807_0002.png" data-lightbox="princessxiao" data-title=""></a>
-        <a href="assets/img/phase1/wp_ss_20140807_0002.png" data-lightbox="princessxiao" data-title=""></a>
-        <a href="assets/img/phase1/wp_ss_20140807_0002.png" data-lightbox="princessxiao" data-title=""></a>
-        <a href="assets/img/phase1/wp_ss_20140807_0002.png" data-lightbox="princessxiao" data-title=""></a>
-        <a href="assets/img/phase1/wp_ss_20140807_0002.png" data-lightbox="princessxiao" data-title=""></a>
-        <a href="assets/img/phase1/wp_ss_20140807_0002.png" data-lightbox="princessxiao" data-title=""></a>
-        <a href="assets/img/phase1/wp_ss_20140807_0002.png" data-lightbox="princessxiao" data-title=""></a>
-        <a href="assets/img/phase1/wp_ss_20140807_0002.png" data-lightbox="princessxiao" data-title=""></a>
-        <a href="assets/img/phase1/wp_ss_20140807_0002.png" data-lightbox="princessxiao" data-title=""></a>
 	</div>
 </div>
 
@@ -233,20 +237,7 @@ We need to clean up the themes, make theme usage guides with theme-specific mark
         </p>
       </div>
     </footer>
-    <script>
-        var cpart1 = $("part1");
-        var pad = "0000";
-        var number = pad;
-        var element_part1;
-        for(var i = 0; i <= 70; i++) {
-            number = pad.substring(0, pad.length - i.toString().length) + i.toString();
-            element_part1 = "<a href='assets/img/phase1/wp_ss_20140807_" + number + ".png' data-lightbox='princessxiao' data-title=''></a>";
-            console.log("element_part1: " + element_part1);
-            cpart1.append(element_part1);
-            
-        }
-        
-    </script>
+    
     
     <script>window.jQuery || document.write('<script src="/assets/themes/hooligan/js/jquery.min.js"><\/script>')</script>
     <script src="/assets/themes/hooligan/bootstrap/js/bootstrap.min.js"></script>
